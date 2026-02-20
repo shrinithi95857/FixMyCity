@@ -534,8 +534,7 @@ def geocode_endpoint():
         })
 
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    print(f"Starting backend at http://127.0.0.1:{port}")
-    print("  Health: http://127.0.0.1:{}/api/health".format(port))
-    app.run(host="127.0.0.1", port=port, debug=True)
+    if __name__ == "__main__":
+        port = int(os.environ.get("PORT", 5000))
+        print(f"Starting backend on port {port}")
+        app.run(host="0.0.0.0", port=port)
