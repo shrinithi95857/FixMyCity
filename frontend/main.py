@@ -11,7 +11,7 @@ from datetime import datetime
 from pages import complaint_form, dashboard, heatmap, priority_zones, data_table, analytics
 
 # Configuration
-DEFAULT_API_BASE = os.environ.get("API_BASE", "http://127.0.0.1:5000")
+DEFAULT_API_BASE = "https://fixmycity-x0rl.onrender.com"
 CATEGORIES = {
     "Road damage": "🛣️",
     "Water supply": "💧",
